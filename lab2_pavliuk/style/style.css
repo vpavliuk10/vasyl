@@ -1,0 +1,26 @@
+.zodiac-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.zodiac-table th, .zodiac-table td {
+    border: 2px solid #444; 
+    padding: 12px; 
+    text-align: left;
+}
+
+.zodiac-table th {
+    background-color: #f2f2f2; 
+    color: #333;
+    font-weight: bold;
+}
+
+.zodiac-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.zodiac-table tr:hover {
+    background-color: #e9f5ff;
+}
