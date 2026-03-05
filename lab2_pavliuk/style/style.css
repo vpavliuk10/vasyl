@@ -1,26 +1,272 @@
-.zodiac-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    font-family: Arial, sans-serif;
+h1 {
+   text-align: center;
 }
 
-.zodiac-table th, .zodiac-table td {
-    border: 2px solid #444; 
-    padding: 12px; 
+caption {
+caption-side: bottom;
+}
+/* ТАБЛИЦЯ 1 */
+.table-1{
+width:40%;
+border:7px solid purple;
+border-collapse:separate;
+border-spacing:3px;
+margin: 20px auto;
+}
+
+.table-1 td{
+border:2px solid purple;
+padding:5px;
+}
+
+.col-1 {
+    width: 150px;;
+    text-align: center;
+}
+.row-2 {
+    height: 150px;
+    text-align:right;
+vertical-align:top;
+}
+
+/* ТАБЛИЦЯ 2 */
+
+.table-2 {
+    width: 50%;
+    border: 2px solid green;   
+    border-collapse: separate; 
+    border-spacing: 20px;      
+}
+
+.table-2 td {
+    border: 2px solid green;        
     text-align: left;
 }
 
-.zodiac-table th {
-    background-color: #f2f2f2; 
-    color: #333;
-    font-weight: bold;
+/* ТАБЛИЦЯ 3 */
+
+.box-red{
+border:1px solid red;
+display:inline-block;
+padding:5px;
+width:80%;
 }
 
-.zodiac-table tr:nth-child(even) {
-    background-color: #fafafa;
+.table-3{
+width:100%;
+border-collapse:separate;
+border-spacing:30px;
 }
 
-.zodiac-table tr:hover {
-    background-color: #e9f5ff;
+.table-3 td{
+border:2px solid red;
+}
+
+.b-green {
+    border-color: green !important;
+}
+
+.b-blue {
+    border-color: blue !important;
+}
+
+/* Таблиця 4 */
+
+.table-4 {
+border-collapse:collapse;
+}
+
+.table-4 td {
+border:2px solid #009688;
+padding:15px;
+width:200px;
+text-align:center;
+}
+
+.text-pink {
+color: palevioletred;
+text-align: left !important;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.left {
+    text-align: left !important;
+}
+
+/* Таблиця 5 */
+
+.table-5{
+width:60%;
+border:3px solid hotpink;
+text-align:center;
+border-top: none;
+border-bottom: none;
+border-collapse: collapse; 
+border-right: 7px double hotpink;
+border-left: 7px double hotpink;
+}
+
+.table-5 td{
+border:2px solid hotpink;
+padding:5px;
+}
+
+.bg-lime{
+background:#00ff00;
+}
+
+.bg-green {
+    background: greenyellow;
+}
+
+.col-wide{
+border-top: none !important;
+}   
+
+.num1 {
+  position: relative;
+   right: 425px;
+}
+
+.num2 {
+    position: relative;
+    right: 125px;
+}
+
+.num3 {
+    position:relative;
+    left: 132px;
+}
+
+.num4 {
+    position:relative;
+   left: -147px;
+}
+
+.num6 {
+    position: relative;
+    right: 146px;
+}
+
+.merged-row td {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.merged-row td:first-child {
+  border-left: 2px solid hotpink !important;
+}
+.merged-row td:last-child {
+  border-right: 2px solid hotpink !important;
+}
+
+.merged-inner td {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.merged-inner td:first-child { border-left: 2px solid pink !important; }
+.merged-inner td:last-child { border-right: 2px solid pink !important; }
+
+
+.no-bottom td {
+    border-bottom: none !important;
+}
+
+/* Таблиця 6 */
+
+.table-6{
+border-collapse:collapse;
+}
+
+.table-6 th,
+.table-6 td{
+border:1px solid black;
+padding:5px 10px;
+text-align:center;
+}
+
+/* Таблиця 7 */
+
+.table-7 {
+        border-collapse: collapse;
+        font-family: "Times New Roman", Times, serif;
+        border: 2px solid #000080;
+        width: 80%;
+        max-width: 800px;
+        table-layout: fixed;
+        margin: 20px auto;
+    }
+    .table-7 td {
+        border: 2px solid #000080;
+        vertical-align: middle;
+        color: #000;
+        height: 25px;
+    }
+    .bg-blue {
+        background-color: #87CEFA;
+    }
+    .bg-pink {
+        background-color: #E6A8B3;
+    }
+    .bg-fuchsia {
+        background-color: #FF00FF;
+    }
+    .table-caption {
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 14px;
+        margin-top: 5px;
+        color: #000;
+        max-width: 700px;
+    }
+
+/* Таблиця 8 */
+
+.main-table {
+  border: 3px solid teal;
+  margin: 20px auto;
+  text-align:left;
+  font-family: sans-serif;
+}
+
+.main-table td {
+  border: 2px solid teal;
+  padding: 2px;
+}
+
+.nested-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.pink-table {
+  border: 2px solid #FF69B4; 
+  border-top: 3px solid purple; 
+}
+
+.pink-table td {
+  border: 2px solid #FF69B4;
+  padding: 2px;
+}
+
+.pink-table tr:first-child td {
+  border-top: none; 
+}
+
+.purple-table {
+  border: 3px solid purple; 
+}
+
+.purple-table td {
+  border: 1px solid purple; 
+  padding: 2px;
+}
+
+.table-caption {
+  font-size: 13px;
+  margin-top: 5px;
 }
