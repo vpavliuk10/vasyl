@@ -8,36 +8,219 @@
 </head>
 <body>
     <a style="display: block; text-align: right" href="../lab2.html">На головну</a>
-    <table class="zodiac-table">
-        <caption>Характеристика знаків зодіаку</caption>
-        <thead>
-            <tr>
-                <th>Знак</th>
-                <th>Стихія</th>
-                <th>Планета-покровитель</th>
-                <th>Камінь-талісман</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <td>Овен</td>
-           <td>Вогонь</td>
-           <td>Марс</td>
-           <td>Алмаз</td>
-        </tr>
-        <tr>
-      <td>Лев</td>
-      <td>Вогонь</td>
-      <td>Сонце</td>
-      <td>Бурштин</td>
+    <h1>Побудова таблиць</h1>
+    <table class="table-1">
+        <caption>Таблиця 1.</caption>
+<tr>
+<td style="text-align: center;">Data1</td>
+<td class="col-1">Data2</td>
+<td class="col-1">Data3</td>
+</tr>
+
+<tr>
+<td class="row-2">Data4</td>
+<td class="row-2">Data5</td>
+<td class="row-2">Data6</td>
+</tr>
+</table>
+<hr>
+
+<table class="table-2">
+    <caption>Таблиця 2.</caption>
+  <tr>
+    <td>Data1</td>
+    <td>Data2</td>
+    <td>Data3</td>
+  </tr>
+  <tr>
+    <td>Data4</td>
+    <td>Data5</td>
+    <td>Data6</td>
+  </tr>
+  <tr>
+    <td>Data7</td>
+    <td>Data8</td>
+    <td>Data9</td>
+  </tr>
+</table>
+<hr>  
+<div class="box-red">
+<table class="table-3">
+<tr>
+<td class="b-blue">Data1</td>
+<td>Data2</td>
+<td>Data3</td>
+</tr>
+<tr>
+<td>Data4</td>
+<td>Data5</td>
+<td class="b-green">Data6</td>
+</tr>
+</table>
+</div>
+<p align="center">Таблиця 3.</p>
+<hr>
+
+<table class="table-4">
+    <caption>Таблиця 4.</caption>
+<tr>
+<td class="text-blue">Data1</td>
+<td>Data2</td>
+<td>Data3</td>
+</tr>
+
+<tr>
+<td class="left">Data4</td>
+<td class="left">Data5</td>
+<td class="text-pink">Data6</td>
+</tr>
+</table>
+
+<hr> 
+
+<table class="table-5">
+    <caption>Таблиця 5.</caption>
+<tr>
+<td colspan="3" class="col-wide">
+<span class="num1">1</span>
+<span class="num2">2</span>
+<span class="num3">3</span>
+</td>
+</tr>
+
+<tr class="merged-row">
+    <td class="num4">4</td>
+    <td class="bg-green">5</td>
+    <td class="num6">6</td>
+  </tr>
+
+<tr class="bg-lime merged-inner no-bottom">
+        <td class="text-left">7</td>
+        <td>8</td>
+        <td class="text-right">9</td>
     </tr>
+</table>
+
+<hr>
+
+<table class="table-6">
+    <caption>Таблиця 6.</caption>
+<tr>
+<th rowspan="2">Стать</th>
+<th colspan="2">Середнє значення</th>
+<th rowspan="2">Вік</th>
+</tr>
+
+<tr>
+<th>Ріст</th>
+<th>Вага</th>
+</tr>
+
+<tr>
+<td>чоловіки</td>
+<td>174</td>
+<td>78</td>
+<td>30</td>
+</tr>
+
+<tr>
+<td>жінки</td>
+<td>165</td>
+<td>56</td>
+<td>25</td>
+</tr>
+</table>
+
+<hr>
+
+<table class="table-7">
+    <caption>Таблиця 7.</caption>
+  <colgroup>
+    <col style="width: 20%;">
+    <col style="width: 35%;">
+    <col style="width: 25%;">
+    <col style="width: 20%;">
+  </colgroup>
+  
+  <tr>
+    <td class="bg-blue">Data</td>
+    <td colspan="2">Data</td>
+    <td>Data</td>
+  </tr>
+  
+  <tr>
+    <td rowspan="2">Data</td>
+    <td rowspan="3">Data</td>
+    <td>Data</td>
+    <td>Data</td>
+  </tr>
+  
+  <tr>
+    <td colspan="2" class="bg-pink">Data</td>
+  </tr>
+  
+  <tr>
+    <td></td>
+    <td></td>
+    <td class="bg-fuchsia"></td>
+  </tr>
+</table>
+
+
+<hr>
+
+<table class="main-table">
+  <caption>Таблиця 8. Таблиця вкладена в таблицю.</caption>
+  <thead>
     <tr>
-      <td>Скорпіон</td>
-      <td>Вода</td>
-      <td>Плутон/Марс</td>
-      <td>Топаз</td>
+      <td>Data</td>
+      <td>Data</td>
+      <td>Data</td>
     </tr>
-        </tbody>
-    </table>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <table class="nested-table pink-table">
+          <tr>
+            <td>Data1</td>
+            <td>Data2</td>
+            <td>Data3</td>
+          </tr>
+          <tr>
+            <td>Data4</td>
+            <td>Data5</td>
+            <td>Data6</td>
+          </tr>
+        </table>
+        <div class="table-caption">Таблиця 8.1.</div>
+      </td>
+      
+      <td>Data</td>
+      
+      <td>
+        <table class="nested-table purple-table">
+          <tr>
+            <td>Data1</td>
+            <td>Data2</td>
+            <td>Data3</td>
+          </tr>
+        </table>
+        <div class="table-caption">Таблиця 8.1.</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
