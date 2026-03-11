@@ -1,0 +1,103 @@
+
+.button {
+    display: inline-block;
+    padding: 8px 15px;
+    color: #f1c40f; 
+    font-size: 14px;
+    text-decoration: none;
+    background: #4b0082;
+    border: 1px solid #f1c40f;
+    border-radius: 20px;
+    text-shadow: 1px 1px 2px #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px #f1c40f;
+    transform: scale(1.05);
+}
+
+.top-nav {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+header {
+    text-align: center;
+    color: #f1c40f;
+    font-family: Georgia, serif;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    letter-spacing: 3px;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #8e44ad;
+}
+
+
+.gradient-border {
+    border: 5px solid;
+    border-image: linear-gradient(to right, #8e44ad, #f1c40f) 1;
+    padding: 5px;
+}
+
+
+header, nav, main, article, aside, footer {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.zodiac-frame {
+    border: 15px solid;
+    border-image-source: url('fon.png');
+    border-image-slice: 30;
+    border-image-width: 10px;
+    border-image-repeat: round;
+    border-image-outset: 5px; 
+    border-radius: 20px;
+}
+
+body {
+    background: linear-gradient(180deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    color: white;
+    font-family: Georgia, serif;
+    min-height: 100vh;
+    padding: 20px;
+    cursor: cell;
+}
+
+article {
+    background: radial-gradient(#2c3e50, #000000);
+    padding: 15px;
+    margin: 20px auto;
+    width: 60%;
+    resize: both;
+    overflow: auto;
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.4);
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    outline-offset: 16px;
+    transition: outline 0.2s ease;
+}
+
+
+article:hover {
+    outline: 3px solid #f1c40f;
+}
+
+input {
+    caret-color: #f1c40f;
+    background: #1a1a1a;
+    color: white;
+    border: 1px solid #444;
+    padding: 5px;
+}
+
+blockquote {
+    quotes: "«" "»";
+    text-align: left;
+}
+
+blockquote::before { content: open-quote; }
+blockquote::after { content: close-quote; }
