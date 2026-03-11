@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Лабораторна робота</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        h2 { font-size:16pt; color:#0033FF; font-family:Geneva, Arial; }
+        h2.curs { font-size:18pt; font-style:italic; font-family: "Courier New", Courier, mono; color:#46dcf9; }
+        h2.normal { font-size:16pt; font-style:normal; color:#FF0000; }
+        #bgmagenta { text-indent:20px; background-color:#1166FF; color:#FFFF00; }
+        #fishka { background-color:#CC99FF; color:#3300FF; font-family:serif; font-size:20pt; font-style:oblique; }
+        #bgyellow { background-color:#FFFF00; color:#0000FF; font-family:Verdana, Arial; }
+
+        div.text { position: absolute; font-family:"serif"; background-color:#99FFFF; color:red; font-style:oblique; top: 600px; width: 850px; height: 150px; padding: 20px; border: dashed 3px; }
+        #first { top: 850px; left: 50px; background: #ccf0ff; border-color: #0cf; position: absolute; width: 150px; padding: 20px; border: dashed 3px; }
+        #second { top: 950px; left: 150px; background: #fff0cc; border-color: #fc0; font-size:10pt; position: absolute; width: 150px; padding: 20px; border: dashed 3px; }
+
+        .task2-box { width: 600px; padding: 20px; margin-bottom: 15px; position: relative; }
+        .p1 { margin-left: 0px; color: white; background-color: darkblue; border: 3px solid black; text-indent: 30px; }
+        .p2 { margin-left: 60px; color: darkgreen; background-color: lightgreen; border: 3px dashed green; text-indent: 50px; }
+        .p3 { margin-left: 120px; color: darkred; background-color: pink; border: 5px double red; text-indent: 70px; }
+
+        .pos-container { border: 2px dashed #333; padding: 20px; margin-top: 20px; position: relative; height: 350px; background: white; }
+        .box { width: 80px; height: 80px; color: white; text-align: center; padding: 5px; font-size: 10pt; }
+        .st { background: gray; position: static; } 
+        .rel { background: blue; position: relative; top: 15px; left: 40px; } 
+        .abs { background: red; position: absolute; bottom: 10px; right: 10px; } 
+        .fix { background: purple; position: fixed; top: 10px; right: 10px; width: 60px; z-index: 1000; padding: 5px; border: 2px dashed white; color: white; font-size: 9pt; }
+
+        .float-box { float: left; width: 120px; height: 60px; background: orange; margin: 10px; border: 2px solid black; }
+        .clear-box { clear: both; background: lightblue; padding: 10px; border: 1px solid blue; }
+        .z-wrap { position: relative; height: 150px; margin-top: 20px; }
+        .z-item { position: absolute; width: 100px; height: 100px; border: 2px solid black; text-align: center; line-height: 100px; }
+        .z1 { background: yellow; top: 0; left: 0; z-index: 1; }
+        .z2 { background: cyan; top: 20px; left: 20px; z-index: 3; }
+        .z3 { background: magenta; top: 40px; left: 40px; z-index: 2; }
+    </style>
+</head>
+<body bgcolor="#FFCC99">
+    <a href="../index.html" class="back-button">← На головну дисципліни</a>
+    <h2>Приємно на пари з ранку приходити</h2>
+    <h2 class="curs">Приємно бачити добрі очі екзаменатора</h2>
+    <h2 id="bgmagenta">Приємно зайти в деканат після сесії</h2>
+    <p id="bgmagenta">Приємно не мати "хвостів", <br> бути успішним і <br id="fishka"> упевненим у завтрашньому дні</p>
+    <h2 class="curs">Приємно вчасно захищати лабораторні роботи...</h2>
+    
+    <div class="text" align="center">
+        Життя світле й безхмарне, коли тобі 20 років і попереду 
+        <span class="normal" style="color:red;">море надій,</span> 
+        <hr id="bgyellow" size="8"> 
+        усе тіло наповнене енергією й готове до <span id="bgmagenta" style="padding:2px;">здійснень, щастя, любові</span>
+    </div>
+
+    <h3 class="curs">Життя повне приємних моментів</h3>
+    <h3 id="fishka" align="center">Тільки варто небагато попрацювати</h3>
+    <hr id="bgmagenta" align="center" width="200" size="5">
+    <hr id="bgyellow" align="center" width="150" size="5">
+    <h2 id="bgyellow" align="center">Мрії прогульника</h2>
+    <h2 class="normal">Том 2. Повне зібрання студентських снів</h2>
+
+    <div id="first">Перший блок</div>
+    <div id="second">Другий блок</div>
+
+    <div style="margin-top: 1050px;">
+        <div class="task2-box p1">Це перший абзац мого тексту. Він притиснутий до лівого краю. Тут ми бачимо суцільну рамку та синій фон.</div>
+        <div class="task2-box p2">Це другий абзац. Як бачите, він зсунувся вправо на 60 пунктів. Ми змінили тип рамки на пунктирну та обрали зелені кольори.</div>
+        <div class="task2-box p3">Це третій абзац. Він зсунувся ще далі — тепер відступ 120 пунктів. Тут використана подвійна рамка та червоний колір для контрасту.</div>
+    </div>
+
+    <div style="margin-top: 50px; background: white; padding: 20px; border: 3px double black; position: relative;">
+        <h2>Завдання 3: Position, Float, Clear, Z-index</h2>
+        <div class="box fix">Fixed (я завжди в кутку)</div>
+        
+        <div class="pos-container">
+            <div class="box st">Static</div>
+            <div class="box rel">Relative</div>
+            <div class="box abs">Absolute</div>
+        </div>
+
+        <div style="margin-top:20px;">
+            <div class="float-box">Float</div>
+            <p>Цей текст обтікає блок.</p>
+            <div class="clear-box">Clear: block (скидання)</div>
+        </div>
+
+        <div class="z-wrap">
+            <div class="z-item z1">Z1</div>
+            <div class="z-item z3">Z2</div>
+            <div class="z-item z2">Z3 (Top)</div>
+        </div>
+    </div>
+
+    <div style="margin-top: 100px; position: relative; height: 1200px;">
+        <br><hr>
+        <h1 align="center">Програмування Internet</h1>
+        
+        <div class="column col1">
+            <h4>Історія виникнення Internet</h4>
+            <p>У середині 60-років у самий розпал холодної війни міністерство оборони США планувало створити мережу для управління...</p>
+        </div>
+
+        <div class="column col2">
+            <h4>Технологія конструювання програмного забезпечення</h4>
+            <p>Технологія конструювання ПЗ — це система інженерних принципів для створення економного ПЗ...</p>
+        </div>
+    </div>
+
+</body>
+</html>
