@@ -1,0 +1,173 @@
+
+body {
+    background: linear-gradient(180deg, #0f0c29 0%, #302b63 50%, #24243e 100%); 
+    color: white;
+    font-family: Georgia, serif;
+    min-height: 100vh;
+    padding: 20px;
+    cursor: cell;
+}
+
+header h1{
+    text-align: center;
+    color: #f1c40f; 
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    letter-spacing: 3px;
+    text-decoration: underline wavy #8e44ad;
+    transition: transform 0.4s ease;
+}
+
+header h1:hover {
+    transform: scale(1.1) rotate(1.5deg);
+}
+.button {
+    display: inline-block;
+    padding: 8px 15px;
+    color: #f1c40f; 
+    background: #4b0082;
+    border: 1px solid #f1c40f;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    
+   
+    transition-property: background-color, color, transform; 
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.05s;
+}
+
+.button:hover {
+    background: #f1c40f;
+    color: #4b0082;
+    transform: scale(1.1); 
+}
+
+input {
+    background: #1a1a1a;
+    color: white;
+    border: 1px solid #444;
+    padding: 5px;
+    transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+input:focus {
+    width: 280px;
+    outline: none;
+    border-color: #f1c40f;
+}
+
+.zodiac-frame {
+    background: radial-gradient(#2c3e50, #000000);
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    border: 2px solid white;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    transition: transform 0.6s ease;
+    transform-origin: center; 
+}
+
+.zodiac-frame:hover {
+    transform: matrix(1.05, 0.02, -0.02, 1.05, 0, 0) rotate(2deg);
+}
+
+.prediction-box {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+#card-2d {
+    width: 150px;
+    padding: 20px;
+    background: #4b0082;
+    border: 2px solid #f1c40f;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+#card-2d:hover {
+    transform: skew(-10deg, 0deg) scale(1.1);
+}
+
+
+#card-3d {
+    width: 150px;
+    height: 100px;
+    perspective: 1000px; 
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    transform: matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1);
+}
+
+#card-3d:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid #f1c40f;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #8e44ad;
+}
+
+.card-back {
+    background: #4b0082;
+    transform: rotateY(180deg);
+}
+
+
+.gradient-border {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.gradient-border a {
+    color: white;
+    text-decoration: none;
+    display: inline-block; 
+    padding: 0 10px;
+    transition: all 0.3s ease; 
+}
+
+.gradient-border a:hover {
+    color: #f1c40f; 
+    transform: scale(1.2) translateY(-3px);
+    text-shadow: 0 0 8px #f1c40f;
+}
+
+.gradient-border strong {
+    color: #8e44ad;
+    margin-right: 10px;
+}
+
+.elements-aside {
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.elements-aside:hover {
+    background-color: rgba(142, 68, 173, 0.15); /* Легкий фіолетовий фон */
+    box-shadow: 0 0 15px rgba(142, 68, 173, 0.3);
+}
