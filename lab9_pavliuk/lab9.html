@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №9</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-wrapper">
+    <header class="block header" data-info="Верхня панель">
+        <div class="logo-box"></div>
+        <span class="num">1</span>
+        <a href="../index.html" class="top-link">На головну дисципліни</a>
+    </header>
+
+    <div class="main-body">
+        <aside class="block sidebar-left">2</aside>
+
+        <main class="content-area">
+            <div class="red-banner"></div>
+            
+            <div class="inner-layout">
+                <section class="scroll-block">
+                    <h2 class="title-font">Розділ 3: Магія Flexbox та Шрифтів</h2>
+                    
+                    <div class="symbols">&#9775; &#9883; &#10048;</div>
+                    <p class="rotated-text">Flexbox — це сучасно!</p>
+
+                    <p class="text-font">
+                        <strong>Flexbox (Flexible Box Layout)</strong> — це одновимірний метод верстки, 
+                        який дозволяє розміщувати елементи в рядках або стовпцях. 
+                        Елементи гнучко розширюються, щоб заповнити додатковий простір, або стискаються, 
+                        щоб поміститися у вузькі межі.
+                    </p>
+
+                    <p>
+                        У цій роботі ми використовуємо функцію <code>calc()</code> для динамічного 
+                        розрахунку розмірів блоків, що робить макет більш адаптивним. 
+                        Також ми підключили два типи шрифтів: один через <code>@import</code> із Google Fonts, 
+                        а інший — локально через правило <code>@font-face</code>.
+                    </p>
+
+                    <p>
+                        Адаптивність реалізована за допомогою медіа-запитів <code>@media</code>. 
+                        Це дозволяє сторінці виглядати коректно як на великих моніторах, так і на смартфонах. 
+                        Для перевірки прокрутки цей блок наповнений текстом, який перевищує його висоту.
+                    </p>
+
+                    <p>
+                        Технологія Flexbox значно спрощує вирівнювання об'єктів по центру, створення 
+                        однакових за висотою колонок та зміну порядку відображення елементів без 
+                        втручання в HTML-код.
+                    </p>
+                    
+                    <div class="red-footer-inside"></div>
+                </section>
+
+                <aside class="block sidebar-right">4</aside>
+            </div>
+        </main>
+    </div>
+
+    <footer class="block footer">
+        <span>5</span>
+    </footer>
+</div>
+</body>
+</html>
