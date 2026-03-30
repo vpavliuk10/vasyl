@@ -1,0 +1,108 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; 
+    font-family: Arial, sans-serif;
+}
+
+
+.grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 200px 1fr; 
+    grid-template-rows: 80px 1fr 70px; 
+    grid-template-areas: 
+        "header header"
+        "side2 main"
+        "footer footer";
+}
+
+.block {
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.header { grid-area: header; background: #ffcc00; position: relative; }
+.logo-box { width: 120px; height: 35px; background: #fff; border: 1px solid #000; position: absolute; left: 20px; }
+
+.sidebar-2 { grid-area: side2; background: #3366ff; }
+.footer { grid-area: footer; background: #ffcc00; }
+
+
+.main-zone {
+    grid-area: main;
+    background: #fff;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+
+.red-bar-top {
+    width: 100%;
+    height: 50px;
+    background: #ff5050;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+}
+
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 150px; 
+    gap: 15px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+
+.block-3-container {
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    background: #fff;
+}
+
+.scroll-box {
+    padding: 10px;
+    text-align: center;
+    min-height: 110%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.red-box-bottom {
+    width: 100%;
+    height: 40px;
+    background: #ff5050;
+    border: 1px solid #000;
+    margin-top: auto;
+}
+
+
+.sidebar-4 {
+    background: #3366ff;
+    height: 85%; 
+    align-self: start;
+}
+
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-areas: "header" "side2" "main" "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .content-wrapper { grid-template-columns: 1fr; }
+    .sidebar-4 { height: 100px; }
+}
