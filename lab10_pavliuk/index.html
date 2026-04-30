@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>ComfortHome — Магазин меблів</title>
+    <style>
+        .hero-section { padding: 60px 0; background-color: #f8f9fa; }
+        .card img { height: 250px; object-fit: cover; }
+        footer { background: #343a40; color: white; padding: 20px 0; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ComfortHome</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Головна</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Каталог меблів
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Вітальня</a></li>
+                            <li><a class="dropdown-item" href="#">Спальня</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Офісні меблі</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&h=400" class="d-block w-100" alt="Sofa">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Сучасні дивани</h5>
+                    <p>Комфорт у кожному метрі.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&h=400" class="d-block w-100" alt="Office">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Робочий простір</h5>
+                    <p>Ефективність та стиль для вашого офісу.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    
+    <section class="hero-section text-center">
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-lg-3 col-md-6 col-sm-12 border p-3">
+                    <h3>Якість</h3>
+                    <p>Тільки натуральне дерево та перевірені матеріали.</p>
+                    <button class="btn btn-primary">Детальніше</button> <!-- 5. Кнопки різних типів -->
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 border p-3 bg-light">
+                    <h3>Акції місяця</h3>
+                    <p>Знижки до -30% на всі ліжка та матраци до кінця тижня.</p>
+                    <button class="btn btn-outline-danger">Переглянути акції</button>
+                </div>
+                <div class="col-lg-3 col-md-12 col-sm-12 border p-3">
+                    <h3>Доставка</h3>
+                    <p>Швидка доставка по Івано-Франківську та області.</p>
+                    <button class="btn btn-success">Графік</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Наші бестселери</h2>
+        <div class="row">
+           
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?auto=format&fit=crop&w=400&h=300" class="card-img-top" alt="Chair">
+                    <div class="card-body">
+                        <h5 class="card-title">Крісло "Модерн"</h5>
+                        <p class="card-text">Зручне крісло для відпочинку з м'якою оббивкою.</p>
+                        <a href="#" class="btn btn-dark">Купити</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1581428982868-e410dd047a90?auto=format&fit=crop&w=400&h=300" class="card-img-top" alt="Table">
+                    <div class="card-body">
+                        <h5 class="card-title">Стіл обідній</h5>
+                        <p class="card-text">Дубовий стіл для великої родини (на 6 осіб).</p>
+                        <a href="#" class="btn btn-dark">Купити</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card">
+                    <img src="https://cdn.taburetka.ua/a7/5b/w6uuui3apm2sug4yeunfl3qokahg9.webp" class="card-img-top" alt="Bed">
+                    <div class="card-body">
+                        <h5 class="card-title">Ліжко "Сон"</h5>
+                        <p class="card-text">Елегантне ліжко з ортопедичною основою.</p>
+                        <a href="#" class="btn btn-dark">Купити</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mb-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=400&h=300" class="card-img-top" alt="Cabinet">
+                    <div class="card-body">
+                        <h5 class="card-title">Шафа-купе</h5>
+                        <p class="card-text">Містка система зберігання для вашого одягу.</p>
+                        <a href="#" class="btn btn-dark">Купити</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 ComfortHome Івано-Франківськ. Всі права захищено.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
