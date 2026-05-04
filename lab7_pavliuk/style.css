@@ -118,7 +118,7 @@ body {
     box-sizing: border-box; 
 }
 
-.rotated { transform: rotate(7deg); color: red; margin: 15px 0; font-size: 16px; display: block; }
+.rotated { transform: rotate(7deg); color: red; margin: 15px 0; font-size: 16px; display: inline-block;  }
 .symbols { font-size: 24px; margin-bottom: 10px; }
 
 .footer { 
