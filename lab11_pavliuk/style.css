@@ -1,0 +1,62 @@
+
+body { 
+    font-family: sans-serif; 
+    line-height: 1.5; 
+    padding: 20px; 
+    background-color: #f4f4f4; 
+}
+
+section { 
+    background: white; 
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    margin-bottom: 25px; 
+    border-radius: 4px; 
+}
+
+h2 { border-bottom: 2px solid #007bff; color: #333; }
+
+.form-row { margin-bottom: 12px; }
+
+label { display: block; font-weight: bold; font-size: 0.9em; }
+
+.inline { display: inline !important; font-weight: normal; }
+
+input[type="text"], input[type="email"], input[type="password"], textarea, select {
+    width: 100%; 
+    max-width: 300px; 
+    padding: 6px;
+    border: 1px solid #ccc;
+}
+
+.btn-group { margin-top: 15px; }
+
+
+.task2-text::first-line { font-weight: bold; color: #007bff; }
+.task2-text::first-letter { font-size: 2.5em; color: #d9534f; float: left; margin-right: 8px; line-height: 1; }
+.task2-text::before { content: "⚡ "; }
+.task2-text::after { content: " [Кінець]"; color: #888; font-size: 0.8em; }
+
+
+.links-area a:link { color: #007bff; text-decoration: none; }
+.links-area a:visited { color: #6f42c1; }
+.links-area a:hover { color: #0056b3; text-decoration: underline; }
+.links-area a:active { color: #dc3545; }
+
+
+
+input:valid { border-color: #28a745; }
+input:invalid { border-color: #dc3545; }
+
+
+input[type="checkbox"]:checked + label { color: #28a745; font-weight: bold; }
+
+
+.variant-box p:first-of-type { border-left: 4px solid #007bff; padding-left: 10px; }
+
+
+.unique-item:only-of-type { color: #fd7e14; text-decoration: underline; }
+
+
+.empty-div:empty { height: 20px; background: #eee; border: 1px dashed #bbb; margin-top: 10px; }
+.empty-div:empty::before { content: "Блок :empty"; font-size: 11px; color: #999; padding-left: 5px; }

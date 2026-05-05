@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+        <a href="../index.html" class="top-link">На головну дисципліни</a>
+    <title>Лабораторна робота 11 - Павлюк Василь</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Лабораторна робота №11</h1>
+    <section>
+        <h2>Завдання 1: Вебформи</h2>
+        <form>
+            <fieldset>
+                <legend>Текстові дані</legend>
+                <div class="form-row">
+                    <label>Однорядкове поле:</label>
+                    <input type="text" name="name" placeholder="Введіть ім'я">
+                </div>
+                <div class="form-row">
+                    <label>Пароль, Email, Range:</label>
+                    <input type="password" placeholder="Пароль">
+                    <input type="email" placeholder="email@test.com" style="margin: 5px 0;">
+                    <input type="range" min="0" max="100">
+                </div>
+                <div class="form-row">
+                    <label>Багаторядкова область:</label>
+                    <textarea rows="3"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Вибір та кнопки</legend>
+                <div class="form-row">
+                    <label>Стать (Radio):</label>
+                    <input type="radio" name="sex" id="m" checked> <label class="inline" for="m">Чол (default)</label>
+                    <input type="radio" name="sex" id="f"> <label class="inline" for="f">Жін</label>
+                </div>
+                <div class="form-row">
+                    <label>Навички (Checkbox):</label>
+                    <input type="checkbox" id="c1"> <label class="inline" for="c1">HTML</label>
+                    <input type="checkbox" id="c2"> <label class="inline" for="c2">CSS</label>
+                </div>
+                <div class="form-row">
+                    <label>Місто (Optgroup та Multiple):</label>
+                    <select>
+                        <optgroup label="Україна">
+                            <option>Івано-Франківськ</option>
+                            <option>Львів</option>
+                        </optgroup>
+                    </select>
+                    <select multiple size="2" style="margin-top:5px;">
+                        <option>C++</option>
+                        <option>JavaScript</option>
+                        <option>Git</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <div class="btn-group">
+                <input type="submit" value="Відправити">
+                <input type="reset" value="Очистити форму">
+                <input type="button" value="Click me!" onClick='alert("Oh, you have been clicked me!!!")'>
+            </div>
+        </form>
+    </section>
+
+    
+    <section>
+        <h2>Завдання 2: Псевдоелементи</h2>
+        <p class="task2-text">
+            Цей текст демонструє роботу ::first-letter, ::first-line, 
+            а також вставку контенту через ::before та ::after.
+        </p>
+    </section>
+
+    <section class="links-area">
+        <h2>Завдання 3: Псевдокласи посилань</h2>
+        <a href="https://pnu.edu.ua" target="_blank">Сайт ПНУ</a> | 
+        <a href="#test">Тестове посилання</a>
+    </section>
+
+  
+    <section class="variant-box">
+        <h2>Завдання 4: Варіант №3</h2>
+        <div class="form-row">
+            <label>Перевірка :valid / :invalid (введіть email):</label>
+            <input type="email" required placeholder="Обов'язкове поле">
+        </div>
+        <div class="form-row">
+            <input type="checkbox" id="check-style">
+            <label for="check-style" class="inline">Елемент :checked</label>
+        </div>
+        <p>Це перший параграф (:first-of-type).</p>
+        <p>Це другий параграф.</p>
+        <div class="unique-box">
+            <span class="unique-item">Я єдиний span у цьому блоці (:only-of-type)</span>
+        </div>
+        <div class="empty-div"></div>
+    </section>
+
+</body>
+</html>
