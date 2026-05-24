@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №9</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .brandbook-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .description-box {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .color-palette {
+            display: flex;
+            gap: 20px;
+            margin-top: auto;
+        }
+
+        .font-example-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .font-example-body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="brandbook-grid">
+        
+        <div class="column">
+            <h3>Логотип і слоган:</h3>
+            <img src="LOGO.png" alt="Вертикальний логотип" width="200">
+            <img src="logo2.png" alt="Горизонтальний логотип" width="200">
+            <img src="logo3.png" alt="Ахроматичний логотип" width="200">
+            
+            <h3>Анімований логотип:</h3>
+            <img src="CYBERSHELL_a.gif" alt="Анімований логотип" width="200">
+        </div>
+
+        <div class="column">
+            <div class="description-box">
+                <h3 style="margin-top: 0;">Опис:</h3>
+                <p>Логотип побудовано на основі класичного синтаксису мов програмування — кутових дужок (тегів), що прямо вказує на мою спеціалізацію у розробці програмного забезпечення (Software Engineering). Використання неонового блакитного кольору на глибокому темному тлі символізує сучасні IT-технології, цифровий простір та динаміку. Заокруглені лінії (Corner Radius) додають знаку сучасності, роблячи його естетичним та збалансованим.</p>
+            </div>
+
+            <div class="color-palette">
+                <div> 
+                    <div style="width: 60px; height: 60px; background: #00E5FF;"></div>
+                    <p style="font-size: 12px; font-weight: bold; margin-bottom: 0;">#00E5FF</p>
+                    <p style="font-size: 12px; margin-top: 0;">RGB(0, 229, 255)</p>
+                </div>
+                <div> 
+                    <div style="width: 60px; height: 60px; background: #1A1A2E;"></div>
+                    <p style="font-size: 12px; font-weight: bold; margin-bottom: 0;">#1A1A2E</p>
+                    <p style="font-size: 12px; margin-top: 0;">RGB(26, 26, 46)</p>
+                </div>
+                <div> 
+                    <div style="width: 60px; height: 60px; background: #E0E0E0; border: 1px solid #ccc;"></div>
+                    <p style="font-size: 12px; font-weight: bold; margin-bottom: 0;">#E0E0E0</p>
+                    <p style="font-size: 12px; margin-top: 0;">RGB(224, 224, 224)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <h3>Шрифти:</h3>
+            
+            <div>
+                <p>Заголовки: <strong>DejaVu Sans</strong></p>
+                <p style="font-size: 20px; color: #090909; font-weight: 700; font-family: 'DejaVu', sans;">
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z <br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z <br>
+                    А Б В Г Ґ Д Е Є Ж З И І Ї Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ь Ю Я <br>
+                    а б в г ґ д е є ж з и і ї й к л м н о п р с т у ф х ц ч ш щ ь ю я <br>
+                    1 2 3 4 5 6 7 8 9 0
+                </p>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <p>Основний текст: <strong>Inter Regular</strong></p>
+                <p style="font-size: 20px; color: #090909; font-weight: 700; font-family: 'Inter', sans-serif;">
+                    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z <br>
+                    a b c d e f g h i j k l m n o p q r s t u v w x y z <br>
+                    А Б В Г Ґ Д Е Є Ж З И І Ї Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ь Ю Я <br>
+                    а б в г ґ д е є ж з и і ї й к л м н о п р с т у ф х ц ч ш щ ь ю я <br>
+                    1 2 3 4 5 6 7 8 9 0
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

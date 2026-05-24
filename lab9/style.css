@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+header {
+    grid-column: span 3;
+    text-align: center;
+    border-bottom: 2px solid #38d3e7;
+}
+
+h2 { color: #2c2c2b; border-bottom: 1px solid #ccc; }
+
+.logo { font-weight: bold; margin-bottom: 20px; }
+.logo span { font-weight: normal; font-size: 0.9em; }
+
+.color-palette { display: flex; gap: 10px; margin-top: 20px; }
+.color {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.7em;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.sample-dejavu { font-family: 'DejaVu Sans', sans-serif; }
+.sample-inter { font-family: 'Inter', sans-serif; font-weight: 700; }
