@@ -95,5 +95,5 @@ html, body {
 }
 
 @media print {
-    .sidebar-left, .sidebar-right, .red-banner { display: none; }
+    .sidebar-left, .sidebar-right, .red-banner { display: flex; }
 }
