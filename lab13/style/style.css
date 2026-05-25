@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0a0f1f;
+  color: white;
+}
+
+h1,
+h2,
+nav a {
+  font-family: "DejaVu Sans", sans-serif;
+  font-weight: bold;
+}
+
+p,
+.card,
+.hero-text p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 30px 40px;
+  background:
+    radial-gradient(circle at top right, rgba(0,255,200,0.15), transparent 25%),
+    radial-gradient(circle at bottom left, rgba(0,255,200,0.08), transparent 20%),
+    #050816;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  width: 220px;
+  height: 90px;
+}
+
+.logo h1 {
+  color: #11f5d3;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #11f5d3;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+
+.hero {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.hero-text h2 {
+  font-size: 64px;
+}
+
+.hero-text p {
+  font-size: 32px;
+  color: #d8d8d8;
+}
+
+.hero-image img {
+  width: 400px;
+  border-radius: 4px;
+}
+
+
+.projects {
+  margin-top: -50px;
+}
+
+.projects h2 {
+  font-size: 72px;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.card {
+  flex: 1;
+  text-align: center;
+  color: #11f5d3;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+
+@media (max-width: 900px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .projects h2 {
+    font-size: 50px;
+  }
+
+  .hero-text h2 {
+    font-size: 48px;
+  }
+
+  .hero-text p {
+    font-size: 24px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
