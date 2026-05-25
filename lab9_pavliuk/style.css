@@ -18,7 +18,7 @@ html, body {
     height: 100vh;
 }
 
-/* Блок 1 та 5 */
+
 .header, .footer {
     height: 80px;
     background: #ffcc00;
